@@ -24,7 +24,7 @@ class SpiderMain:
         # 登入知乎
         self.loginer.login(account, password)
         # 通过话题获取url列表
-
+        self.urls.get_url(topic, self.loginer.get_session())
         # 通过下载器下载每个页面数据
 
         # 抓取每个页面中的图片
